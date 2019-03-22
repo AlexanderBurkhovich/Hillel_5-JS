@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1.0">
+    <title>HW_5</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+<div class="global-wrapper">
+    <header class="header">
+        <nav class="header__navigation">
+            <ul class="header__navigation-list">
+                <li id="header__navigation-toggle" class="header__navigation-toggle">Выбор</li>
+                <li class="header__navigation-item header__navigation-item--first header__navigation-item--hidden">
+                    <a href="#" class="header__navigation-link">1</a>
+                </li>
+                <li class="header__navigation-item header__navigation-item--hidden">
+                    <a href="#" class="header__navigation-link">2</a>
+                </li>
+                <li class="header__navigation-item header__navigation-item--hidden">
+                    <a href="#" class="header__navigation-link">3</a>
+                </li>
+                <li class="header__navigation-item header__navigation-item--hidden">
+                    <a href="#" class="header__navigation-link">4</a>
+                </li>
+                <li class="header__navigation-item header__navigation-item--hidden">
+                    <a href="#" class="header__navigation-link">5</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <aside id="sidebar" class="sidebar">
+        <nav id="sidebar__navigation" class="sidebar__navigation">
+            <ul id="sidebar__navigation-list" class="sidebar__navigation-list">
+                <li id="sidebar__navigation-toggle" class="sidebar__navigation-toggle">Меню</li>
+                <li class="sidebar__navigation-item sidebar__navigation-item--first sidebar__navigation-item--hidden ">
+                    <a data-target-element="page1" href="#" class="sidebar__navigation-link">JavaScript</a>
+                </li>
+                <li class="sidebar__navigation-item sidebar__navigation-item--hidden">
+                    <a data-target-element="page2" href="#" class="sidebar__navigation-link">JavaScript2.0</a>
+                </li>
+                <li class="sidebar__navigation-item sidebar__navigation-item--hidden">
+                    <a data-target-element="page3" href="#" class="sidebar__navigation-link">ECMAScript 6</a>
+                </li>
+                <li class="sidebar__navigation-item sidebar__navigation-item--hidden">
+                    <a data-target-element="page4" href="#" class="sidebar__navigation-link">Java</a>
+                </li>
+                <li class="sidebar__navigation-item sidebar__navigation-item--hidden">
+                    <a data-target-element="page5" href="#" class="sidebar__navigation-link">Плагины и расширения</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="socials socials--sidebar">
+            
+        </div>
+        <button id="sidebar__button" class="sidebar__toggle"></button>
+    </aside>
+    <main class="main-content">
+        <div id="page1" class="main-content__page">
+            <h1 class="main-content__header">JavaScript</h1>
+            <p class="main-content__text">
+               Язык JavaScript
+            </p>
+            <p class="main-content__text">
+                JavaScript изначально создавался для того, чтобы сделать web-странички «живыми». Программы на этом языке называются скриптами. В браузере они подключаются напрямую к HTML и, как только загружается страничка – тут же выполняются.Программы на JavaScript – обычный текст. Они не требуют какой-то специальной подготовки.
+                В этом плане JavaScript сильно отличается от другого языка, который называется Java.
+            </p>
+            <p class="main-content__text">
+                Почему JavaScript?
+                Когда создавался язык JavaScript, у него изначально было другое название: «LiveScript». Но тогда был очень популярен язык Java, и маркетологи решили, что схожее название сделает новый язык более популярным.
+                Планировалось, что JavaScript будет эдаким «младшим братом» Java. Однако, история распорядилась по-своему, JavaScript сильно вырос, и сейчас это совершенно независимый язык, со своей спецификацией, которая называется ECMAScript, и к Java не имеет никакого отношения.
+                У него много особенностей, которые усложняют освоение, но по ходу учебника мы с ними разберёмся.
+            </p>
+            <p class="main-content__text">
+               Современный JavaScript – это «безопасный» язык программирования общего назначения. Он не предоставляет низкоуровневых средств работы с памятью, процессором, так как изначально был ориентирован на браузеры, в которых это не требуется.
+            </p>
+        </div>
+        <div id="page2" class="main-content__page main-content__page--unactive">
+            <h1 class="main-content__header">Page2</h1>
+            <p class="main-content__text">
+                Что НЕ умеет JavaScript?
+            </p>
+            <p class="main-content__text">
+               JavaScript – быстрый и мощный язык, но браузер накладывает на его исполнение некоторые ограничения…
+               Это сделано для безопасности пользователей, чтобы злоумышленник не мог с помощью JavaScript получить личные данные или как-то навредить компьютеру пользователя.
+               Этих ограничений нет там, где JavaScript используется вне браузера, например на сервере. Кроме того, современные браузеры предоставляют свои механизмы по установке плагинов и расширений, которые обладают расширенными возможностями, но требуют специальных действий по установке от пользователя.
+               Большинство возможностей JavaScript в браузере ограничено текущим окном и страницей.
+            </p>
+        </div>
+        <div id="page3" class="main-content__page main-content__page--unactive">
+            <h1 class="main-content__header">Page3</h1>
+            <p class="main-content__text">
+                ECMAScript 6
+            </p>
+            <p class="main-content__text">
+                Сам язык JavaScript улучшается. Современный стандарт ECMAScript 5 включает в себя новые возможности для разработки, ECMAScript 6 будет шагом вперёд в улучшении синтаксиса языка.
+                Современные браузеры улучшают свои движки, чтобы увеличить скорость исполнения JavaScript, исправляют баги и стараются следовать стандартам.
+            </p>
+			 <p class="main-content__text">
+                Очень важно то, что новые стандарты HTML5 и ECMAScript сохраняют максимальную совместимость с предыдущими версиями. Это позволяет избежать неприятностей с уже существующими приложениями.
+                Впрочем, небольшая проблема с «супер-современными штучками» всё же есть. Иногда браузеры стараются включить новые возможности, которые ещё не полностью описаны в стандарте, но настолько интересны, что разработчики просто не могут ждать.
+                Однако, со временем стандарт меняется и браузерам приходится подстраиваться к нему, что может привести к ошибкам в уже написанном, основанном на старой реализации, JavaScript-коде. Поэтому следует дважды подумать перед тем, как применять на практике такие «супер-новые» решения.
+                При этом все браузеры сходятся к стандарту, и различий между ними уже гораздо меньше, чем всего лишь несколько лет назад.
+            </p>
+        </div>
+        <div id="page4" class="main-content__page main-content__page--unactive">
+            <h1 class="main-content__header">Page4</h1>
+            <p class="main-content__text">
+              Java
+            </p>
+            <p class="main-content__text">
+               Java – язык общего назначения, на нём можно писать самые разные программы. Для интернет-страниц есть особая возможность – написание апплетов.
+            </p>
+			<p class="main-content__text">
+               Такой тег загружает Java-программу из файла BTApplet.class и выполняет её с параметрами param. Апплет выполняется в отдельной части страницы, в прямоугольном «контейнере». Все действия пользователя внутри него обрабатывает апплет. Контейнер, впрочем, может быть и спрятан, если апплету нечего показывать.
+            </p>
+        </div>
+        <div id="page5" class="main-content__page main-content__page--unactive">
+            <h1 class="main-content__header">Page5</h1>
+            <p class="main-content__text">
+                Плагины и расширения для браузера
+            </p>
+            <p class="main-content__text">
+                Все современные браузеры предоставляют возможность написать плагины. Для этого можно использовать как JavaScript (Chrome, Opera, Firefox), так и язык С (ActiveX для Internet Explorer).
+                Эти плагины могут как отображать содержимое специального формата (плагин для проигрывания музыки, для показа PDF), так и взаимодействовать со страницей.
+                Как и в ситуации с Java-апплетом, у них широкие возможности, но посетитель поставит их в том случае, если вам доверяет.
+            </p>
+        </div>
+
+    </main>
+    <footer id="footer" class="footer">
+        <ul class="footer__items-list">
+            <li class="footer__list-item"><a href="#" class="footer__link">1</a></li>
+            <li class="footer__list-item"><a href="#" class="footer__link">2</a>
+            </li>
+            <li class="footer__list-item"><a href="#" class="footer__link">3</a>
+            </li>
+            <li class="footer__list-item"><a href="#" class="footer__link">4</a>
+            </li>
+            <li class="footer__list-item"><a href="#" class="footer__link">5</a></li>
+        </ul>
+    </footer>
+
+    <script defer src="./js/main.js"></script>
+</div>
+</body>
+</html>
